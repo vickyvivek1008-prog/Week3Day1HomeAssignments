@@ -1,0 +1,36 @@
+package week3day1Homeassignments;
+
+import java.util.Scanner;
+
+public class ReverseOfString {
+
+	public static void main(String[] args) 
+	{
+		// TODO Auto-generated method stub
+		//method 1
+		System.out.println("Input string : ");
+		Scanner sc=new Scanner(System.in);
+		String str= sc.nextLine();
+		int len=str.length();
+		String reverse="";
+		for (int i=len-1;i>=0;i--)
+		{
+			reverse=reverse+str.charAt(i);
+		}
+       System.out.println("Reversed String :"+ reverse);
+       
+       //method 2
+		System.out.println("Input string : ");
+		Scanner scb=new Scanner(System.in);
+		String str1= scb.nextLine();
+		char [] arr=str1.toCharArray();
+		int length =arr.length;
+		String reversed="";
+		for (int i=length-1;i>=0;i--)
+		{
+			reversed=reversed+arr[i];
+		}
+		System.out.println("Reversed String is :"+ reversed);
+	}
+
+}
