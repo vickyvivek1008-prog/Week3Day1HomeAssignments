@@ -1,0 +1,25 @@
+package week3day1Homeassignments;
+
+import java.util.Arrays;
+
+public class FindMissingElement 
+{
+	public static void main(String[] args) 
+	{
+		int [] arr= {1,4,3,7,6,8,2};
+		Arrays.sort(arr);
+		System.out.println("Sorted Array is :"+Arrays.toString(arr));
+		
+		for(int i=arr[0];i<arr.length; i++)
+		{
+			if(i !=arr[i-1]) 
+			{
+				System.out.println("Missing Element in array is: "+ i);
+				break;
+			}
+			
+		}
+		
+	}
+
+}
